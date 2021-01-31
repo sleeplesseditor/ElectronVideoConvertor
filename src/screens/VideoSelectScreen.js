@@ -24,11 +24,11 @@ class VideoSelectScreen extends Component {
 
     renderChildren({ isDragActive, isDragReject }) {
         if (isDragActive) {
-            return <h4 className="drop-message">Omnomnom, let me have those videos!</h4>;
+            return <h4 className="drop-message">Video File Format Accepted</h4>;
         } else if (isDragReject) {
-            return <h4 className="drop-message">Uh oh, I don't know how to deal with that type of file!</h4>;
+            return <h4 className="drop-message">Video File Format Not Accepted</h4>;
         } else {
-            return <h4 className="drop-message">Drag and drop some files on me, or click to select.</h4>
+            return <h4 className="drop-message">Drag and Drop Some Video Files, or Click to Select.</h4>
         }
     }
 
